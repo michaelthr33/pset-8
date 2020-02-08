@@ -78,7 +78,11 @@ h2 {
    user-select: none;
    width: 150px;
  }
-}
+ .square:hover {
+   background-image: url("../images/johnson.jpg");
+   background-size: cover;
+   cursor: pointer;
+ }
 
 /*
  * And we give it a little flare when the user mouses over a square.
