@@ -6,6 +6,8 @@
 body {
   text-align: center;
   font-family: "Roboto", monospace;
+   background-image: url("../images/background.jpg");
+   background-size: cover;
 }
 
 /*
@@ -68,11 +70,14 @@ h2 {
  * The square itself. We give it a specific size and border.
  */
 
-.square {
-  border: 1px solid rgba(0, 0, 0, 0.75);
-  height: 150px;
-  user-select: none;
-  width: 150px;
+ .square {
+   border: 1px solid rgba(0, 0, 0, 0.75);
+   font-size: 96px;
+   height: 150px;
+   line-height: 150px;
+   user-select: none;
+   width: 150px;
+ }
 }
 
 /*
