@@ -20,6 +20,7 @@ const message = document.querySelector("h2");   // grab the subheader
 window.onload = init;
 document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = init;
+document.getElementById("start-button").onclick=changeturn
 ///////////////////// FUNCTIONS /////////////////////////////////////
 function init() {
   board = [
@@ -41,6 +42,13 @@ function render() {
   message.textContent =
     win === "T" ? "It's a tie!" : win ? `${win} wins!` : `Turn: ${turn}`;
 }
+
+function changeturn() {
+  if (turn =="X"){turn="O"}
+  else if (turn=="O"){turn="X"}
+  message.textContent="Turn: "+turn+""
+}
+
 function takeTurn(e) {
   if (!win) {
     let index = squares.findIndex(function(square) {
