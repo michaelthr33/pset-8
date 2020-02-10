@@ -6,7 +6,7 @@
 body {
   text-align: center;
   font-family: "Roboto", monospace;
-   background-image: url("../images/background.jpg");
+   background-image: url("../Images/background.jpg");
    background-size: cover;
 }
 
@@ -79,7 +79,7 @@ h2 {
    width: 150px;
  }
  .square:hover {
-   background-image: url("../images/johnson.jpg");
+   background-image: url("../Images/johnson.jpg");
    background-size: cover;
    cursor: pointer;
  }
