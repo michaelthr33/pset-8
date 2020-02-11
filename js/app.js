@@ -11,7 +11,7 @@ const winningConditions = [
 ];
 ///////////////////// APP STATE (VARIABLES) /////////////////////////
 let board;
-let turn;
+let turn="X"
 let win;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
@@ -29,7 +29,7 @@ function init() {
     "", "", ""
   ];
 
-  turn = "X";
+
   win = null;
 
   render();
@@ -47,6 +47,7 @@ function changeturn() {
   if (turn =="X"){turn="O"}
   else if (turn=="O"){turn="X"}
   message.textContent="Turn: "+turn+""
+  init()
 }
 
 function takeTurn(e) {
@@ -79,3 +80,4 @@ function getWinner() {
 
   return winner ? winner : board.includes("") ? null : "T";
 }
+
